@@ -11,6 +11,8 @@
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Boxicons-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
         type="text/css" />
@@ -22,22 +24,109 @@
 </head>
 
 <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Sandor Gyorfi</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="" alt="profile image" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                </ul>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Sandor Gyorfi</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src=""
+                    alt="profile image" /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- About-->
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0">
+                Sandor
+                <span class="text-primary">Gyorfi</span>
+            </h1>
+            <div class="subheading mb-5">
+                Bristol, BS14 9RS ·
+                <a href="mailto:your@email.com">request@sandorgyorfi.com</a>
             </div>
+            <p class="lead mb-5">With a Level 5 Diploma in Web Application Development, I specialize in back end and
+                interactive front end development. My approach to web development ensures that user experience is at the
+                core of all projects, leveraging the latest technologies to create seamless and dynamic online
+                environments.</p>
+            <div class="social-icons">
+                <a class="social-icon" href="your-linkedin-url"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="your-github-url"><i class="fab fa-github"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <h2 class="mb-5">Education</h2>
+    <!-- Gateway Qualifications Level 5 Diploma -->
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+            <h3 class="mb-0">Gateway Qualifications Level 5 Diploma</h3>
+            <div class="subheading mb-3">Web Application Development</div>
+            <div>City of Bristol College</div>
+            <p>This certificate course focuses on full-stack development and teaches all the necessary web development
+                skills for both front-end and back-end development. It teaches you how to use the most important
+                computer languages and frameworks for building websites today.</p>
+            <p>Course Content:</p>
+            <ul>
+                <li>HTML & CSS for structured and styled web content</li>
+                <li>JavaScript for dynamic client-side scripting</li>
+                <li>Python for server-side development</li>
+                <li>Django framework for robust back-end services</li>
+                <li>Flask for lighter back-end services and APIs</li>
+                <li>Bootstrap for responsive design and jQuery for enhanced interactivity</li>
+                <li>SQL databases for data management</li>
+                <li>Version control with Git and GitHub</li>
+                <li>Testing with PyTest & Jest to ensure code reliability</li>
+            </ul>
+            <p>Credit Distribution:</p>
+            <ul>
+                <li>User-Centric Front End Development - 12 Credits</li>
+                <li>Interactive Front End Development - 16 Credits</li>
+                <li>Back End Development - 22 Credits</li>
+                <li>Full Stack Frameworks with Django - 25 Credits</li>
+            </ul>
+            <p>Overall GPA: Pass (75 Credits at Level 5, 25 Credits at Level 6)</p>
+        </div>
+        <div class="flex-shrink-0"><span class="text-primary">February 2024</span></div>
+    </div>
+
+    <!-- Skills-->
+    <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Skills</h2>
+            <div class="subheading mb-3">Programming Languages & Tools</div>
+            <ul class="list-inline dev-icons">
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item"><i class='bx bxl-html5'>HTML</i>
+                    <li class="list-inline-item"><i class="bx bxl-css3"></i> CSS</li>
+                    <li class="list-inline-item"><i class="bx bxl-javascript"></i> JavaScript</li>
+                    <li class="list-inline-item"><i class="bx bxl-bootstrap"></i> Bootstrap</li>
+                    <li class="list-inline-item"><i class="bx bxl-nodejs"></i> Node.js</li>
+                    <li class="list-inline-item"><i class="bx bx-vial"></i> Jest</li>
+                    <li class="list-inline-item"><i class="bx bxl-python"></i> Python</li>
+                    <li class="list-inline-item"><i class='bx bxl-flask'></i></i>Flask</li>
+                    <li class="list-inline-item"><i class="bx bx-data"></i> SQL</li>
+                    <li class="list-inline-item"><i class='bx bxl-mongodb'></i>Django</li>
+                    <li class="list-inline-item"><i class='bx bxl-postgresql'></i> PostgreSQL</li>
+                    <li class="list-inline-item"><i class='bx bxl-mongodb'></i> MongoDB</li>
+                    <li class="list-inline-item"><i class="bx bxl-github"></i> GitHub</li>
+                </ul>
+            </ul>
+    </section>
+
+
+
 
 
     <!-- Bootstrap -->
