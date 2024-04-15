@@ -1,0 +1,100 @@
+:root {
+    --icon-size: 3.5rem;
+    --font-size-large: 3rem;
+    --font-size-responsive: calc(1rem + 1.5vw);
+    --side-nav-padding: 1rem;
+    --navbar-font-weight: 800;
+    --navbar-letter-spacing: 0.05rem;
+    --navbar-text-transform: uppercase;
+    --side-nav-width: 200px;
+    --profile-img-size: 10rem;
+    --resume-section-padding: 5rem;
+    --resume-section-max-width: 75rem;
+    --outline-focus-color: rgba(0, 0, 0, 0.15);
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--icon-size);
+    width: var(--icon-size);
+}
+
+.dev-icons {
+    font-size: var(--font-size-responsive);
+}
+
+#sideNav {
+    padding-left: var(--side-nav-padding);
+    padding-right: var(--side-nav-padding);
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: var(--navbar-font-weight);
+    letter-spacing: var(--navbar-letter-spacing);
+    text-transform: var(--navbar-text-transform);
+}
+
+#sideNav .navbar-toggler:focus {
+    outline-color: var(--outline-focus-color);
+}
+
+@media (min-width: 992px) {
+    #sideNav {
+        width: var(--side-nav-width);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #sideNav .navbar-brand {
+        margin: auto auto 0;
+        padding: 0.5rem;
+    }
+
+    #sideNav .navbar-brand .img-profile {
+        max-width: var(--profile-img-size);
+        max-height: var(--profile-img-size);
+    }
+
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block;
+    }
+}
+
+section.resume-section {
+    display: flex;
+    align-items: center;
+    padding-left: var(--resume-section-padding);
+    padding-right: var(--resume-section-padding);
+    padding-top: var(--resume-section-padding);
+    padding-bottom: var(--resume-section-padding);
+    max-width: var(--resume-section-max-width);
+}
+
+@media (min-width: 768px) {
+    section.resume-section {
+        min-height: 100vh;
+    }
+}
