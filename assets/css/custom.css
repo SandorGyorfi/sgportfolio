@@ -1,33 +1,228 @@
 :root {
-    --icon-size: 3.5rem;
-    --font-size-large: 3rem;
-    --font-size-responsive: calc(1rem + 1.5vw);
+    /* Icon and Image Sizes */
+    --icon-dimension: 3.5rem;
+    --profile-image-dimension: 10rem;
+
+    /* Font Sizes */
+    --large-font-size: 3rem;
+    --responsive-font-size: calc(1rem + 1.5vw);
+
+    /* Navigation Styles */
     --side-nav-padding: 1rem;
-    --navbar-font-weight: 800;
+    --side-nav-width: 200px;
+    --navbar-font-weight: 600;
     --navbar-letter-spacing: 0.05rem;
     --navbar-text-transform: uppercase;
-    --side-nav-width: 200px;
-    --profile-img-size: 10rem;
+
+    /* Resume Section Styles */
     --resume-section-padding: 5rem;
     --resume-section-max-width: 75rem;
-    --outline-focus-color: rgba(0, 0, 0, 0.15);
-}
 
+    /* Misc */
+    --outline-focus-color: rgba(0, 0, 0, 0.15);
+
+    --primary-color: #495057;  
+    --secondary-color: #3B8C84; 
+    --tertiary-color: #3B8C84;  
+    --light-color: #F2F2F2;    
+    --dark-color: #0D0D0D;  
+    .btn-outline-secondary {
+        color: var(--tertiary-color);
+        border-color: var(--tertiary-color);
+      }
+      
+      .btn-outline-secondary:hover {
+        color: var(--light-color);
+        background-color: var(--tertiary-color);
+        border-color: var(--tertiary-color);
+      }
+      
+      .btn-outline-success {
+        color: var(--light-color);
+        border-color: var(--light-color);
+      }
+      
+      .btn-outline-success:hover {
+        color: var(--dark-color);
+        background-color: var(--light-color);
+        border-color: var(--light-color);
+      }
+      
+      .btn-outline-info {
+        color: var(--secondary-color);
+        border-color: var(--secondary-color);
+      }
+      
+      .btn-outline-info:hover {
+        color: var(--dark-color);
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+      }
+      
+      .btn-outline-warning {
+        color: var(--dark-color);
+        border-color: var(--dark-color);
+      }
+      
+      .btn-outline-warning:hover {
+        color: var(--light-color);
+        background-color: var(--dark-color);
+        border-color: var(--dark-color);
+      }
+      
+      .btn-outline-danger {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      
+      .btn-outline-danger:hover {
+        color: var(--light-color);
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      
+      .btn-outline-light {
+        color: var(--light-color);
+        border-color: var(--light-color);
+      }
+      
+      .btn-outline-light:hover {
+        color: var(--dark-color);
+        background-color: var(--light-color);
+        border-color: var(--light-color);
+      }
+      
+      .btn-outline-dark {
+        color: var(--dark-color);
+        border-color: var(--dark-color);
+      }
+      
+      .btn-outline-dark:hover {
+        color: var(--light-color);
+        background-color: var(--dark-color);
+        border-color: var(--dark-color);
+      }
+         
+  }
+  
+  /* Applying these colors to Bootstrap's button styling */
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .btn-secondary {
+    background-color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+  }
+  
+  .btn-secondary:hover {
+    background-color: darken(var(--tertiary-color), 10%);
+    border-color: darken(var(--tertiary-color), 10%);
+  }
+  
+  .btn-success {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border-color: var(--light-color);
+  }
+  
+  .btn-success:hover {
+    background-color: lighten(var(--light-color), 5%);
+    border-color: lighten(var(--light-color), 5%);
+  }
+  
+  .btn-info {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .btn-info:hover {
+    background-color: lighten(var(--secondary-color), 10%);
+    border-color: lighten(var(--secondary-color), 10%);
+  }
+  
+  .btn-warning {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+    color: var(--light-color);
+  }
+  
+  .btn-warning:hover {
+    background-color: lighten(var(--dark-color), 10%);
+    border-color: lighten(var(--dark-color), 10%);
+  }
+  
+  .btn-danger {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-danger:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+  }
+  
+  .btn-light {
+    background-color: var(--light-color);
+    border-color: var(--light-color);
+    color: var(--dark-color);
+  }
+  
+  .btn-light:hover {
+    background-color: darken(var(--light-color), 5%);
+    border-color: darken(var(--light-color), 5%);
+  }
+  
+  .btn-dark {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+    color: var(--light-color);
+  }
+  
+  .btn-dark:hover {
+    background-color: lighten(var(--dark-color), 10%);
+    border-color: lighten(var(--dark-color), 10%);
+  }
+  
+  .btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-outline-primary:hover {
+    color: var(--light-color);
+    background-color: var(--primary-color);
+  }
+  
+  
 .social-icons .social-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: var(--icon-size);
-    width: var(--icon-size);
+    height: var(--icon-dimension);
+    width: var(--icon-dimension);
 }
 
 .dev-icons {
-    font-size: var(--font-size-responsive);
+    font-size: var(--responsive-font-size);
+}
+
+.profile-image{
+  height: var(--profile-image-dimension);
+  border-radius: 0 0 100px 0;
+  width: 200px;
+  
 }
 
 #sideNav {
-    padding-left: var(--side-nav-padding);
-    padding-right: var(--side-nav-padding);
+    padding: var(--side-nav-padding);
+    border-radius: 0 100px 0 0;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -57,8 +252,8 @@
     }
 
     #sideNav .navbar-brand .img-profile {
-        max-width: var(--profile-img-size);
-        max-height: var(--profile-img-size);
+        max-width: var(--profile-image-dimension);
+        max-height: var(--profile-image-dimension);
     }
 
     #sideNav .navbar-collapse {
@@ -72,6 +267,7 @@
     #sideNav .navbar-collapse .navbar-nav {
         flex-direction: column;
         width: 100%;
+        
     }
 
     #sideNav .navbar-collapse .navbar-nav .nav-item {
@@ -86,10 +282,7 @@
 section.resume-section {
     display: flex;
     align-items: center;
-    padding-left: var(--resume-section-padding);
-    padding-right: var(--resume-section-padding);
-    padding-top: var(--resume-section-padding);
-    padding-bottom: var(--resume-section-padding);
+    padding: var(--resume-section-padding);
     max-width: var(--resume-section-max-width);
 }
 
@@ -97,4 +290,101 @@ section.resume-section {
     section.resume-section {
         min-height: 100vh;
     }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007BFF;
+    color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 0.5s ease, visibility 0.5s, transform 0.3s ease;
+    visibility: hidden;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    color: #FFFFFF;
+
+}
+
+
+.email{
+    color: var(--primary-color) !important;   
+}
+
+.email:hover{
+    color: var(--secondary-color) !important;  
+}
+
+.download{
+    margin: 5px;
+    padding: 8px;
+    font-size: 1.1rem;
+}
+
+.download:hover{
+    color: #F2F2F2;   
+    padding: 8.5px;
+    box-shadow: #495057 0px 0px 2px;
+}
+
+
+
+.footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 100px 0 0 0;
+
+}
+
+.footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;  
+}
+
+.footer h4 {
+  color: var(--secondary-color);
+  margin: 0;  
+}
+
+.footer .footer-link {
+  color: var(--light-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .footer-link:hover {
+  color: var(--tertiary-color);
+}
+
+@media (max-width: 768px) {
+  .footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 200px;
+  }
+  .navbar{
+    border-radius:0px;
+  }
 }
