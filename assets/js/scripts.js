@@ -32,3 +32,24 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarIcon = document.querySelector('.navbar-toggler-icon');
+
+    function toggleNavbar() {
+        if (navbarToggler.classList.contains('toggler-open')) {
+            navbarToggler.classList.remove('collapsed');
+        } else {
+            navbarToggler.classList.add('collapsed');
+        }
+    }
+
+    navbarToggler.addEventListener('click', function() {
+        navbarToggler.classList.toggle('toggler-open');
+        toggleNavbar();
+    });
+
+    toggleNavbar();
+});
